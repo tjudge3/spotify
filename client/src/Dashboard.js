@@ -5,6 +5,7 @@ import TrackSearchResult from "./TrackSearchResult"
 import { Container, Form } from "react-bootstrap"
 import SpotifyWebApi from "spotify-web-api-node"
 import axios from "axios"
+import NoteComponent from "./NoteComponent";
 
 const spotifyApi = new SpotifyWebApi({
   clientId: "dcdb1f48e9e641d4a246dfa3bd16a6f4",
@@ -97,6 +98,9 @@ export default function Dashboard({ code }) {
       </div>
       <div>
         <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
+      </div>
+      <div style={{ marginTop: "20px" }}>
+        <NoteComponent track={playingTrack} />
       </div>
     </Container>
   )
