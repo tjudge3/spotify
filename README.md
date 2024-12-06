@@ -1,2 +1,2 @@
 # spotify
-Spotify App Tutorial PoC for David
+Spotify Note Taking App, Proof of Concept
